@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Pacifico&family=Poppins:wght@200;300;400;500;600&family=Satisfy&family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+@import "tailwindcss";
+*{
+    font-family: 'noto sans', sans-serif;
+}
+
+.scrollbar {
+  overflow-y: scroll; /* allows scrolling */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+/* Toast animations */
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.3s ease-out;
+}
