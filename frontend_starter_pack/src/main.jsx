@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Routes } from './Router/router.jsx';
 import { AppProvider } from './contexts/AuthContext.jsx';
 
-
+  
 const route = createBrowserRouter([
 ...Routes
 ])
